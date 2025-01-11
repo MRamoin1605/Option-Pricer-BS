@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np 
-import scipy.stats as sc 
-import math
+import math 
 import streamlit as st 
 import datetime 
 from calculs import *
@@ -18,7 +17,7 @@ with st.form("Variables"):
     
      r = st.number_input("Taux sans risque: ", value=0.00, placeholder="En pourcentage...")/100
      vol = st.number_input("Volatilité annuelle du sous-jacent ", value=0.00, placeholder="En pourcentage...")/100
-     quotite =st.number_input("Quotité ", value=0 ,placeholder="En pourcentage...")
+     quotite =st.number_input("Quantité ", value=0 ,placeholder="En pourcentage...")
 
      
      submitted = st.form_submit_button("Calculer le prix de l'option")
